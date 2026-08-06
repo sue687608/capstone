@@ -1,0 +1,30 @@
+---
+description: Language Juggler capstone — project context and conventions
+alwaysApply: true
+---
+
+# Language Juggler
+
+Capstone app for language learners to practice juggling multiple languages in one place.
+
+## Status
+
+Early exploration — core purpose and user value are still being defined. Prefer small, reversible changes until direction is settled.
+
+## Stack
+
+- **Frontend**: React (functional components, hooks)
+- **Backend**: Node.js (when added)
+- **Tooling**: npm, TypeScript preferred for new code
+
+## Conventions
+
+- Keep diffs minimal and focused; avoid over-engineering early prototypes
+- Match existing patterns in the repo before introducing new abstractions
+- Do not commit secrets (`.env`, API keys); use `.env.example` for templates
+- Update `README.md` when install steps or project status change materially
+- Only create git commits when explicitly requested
+
+## Product direction (draft)
+
+Help learners switch between languages, retain vocabulary, and build confidence through practice — exact features TBD.

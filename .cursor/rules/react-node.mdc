@@ -1,0 +1,35 @@
+---
+description: React and Node.js patterns for this project
+globs: **/*.{ts,tsx,js,jsx}
+alwaysApply: false
+---
+
+# React & Node Patterns
+
+## React
+
+- Use functional components and hooks; no class components
+- Colocate component-specific logic in custom hooks when reused
+- Prefer named exports for components; default export only for pages/routes if the framework requires it
+- Keep components small; split when JSX or logic grows hard to follow
+
+## Node / API (when present)
+
+- Validate input at route boundaries
+- Return consistent error shapes: `{ error: string }` with appropriate HTTP status
+- Use environment variables for config; never hardcode secrets
+
+## Examples
+
+```tsx
+// Prefer extracting reusable logic
+function useLanguageDeck(languages: string[]) {
+  const [active, setActive] = useState(languages[0]);
+  return { active, setActive };
+}
+```
+
+```ts
+// API error handling
+res.status(400).json({ error: "Language code is required" });
+```
