@@ -24,4 +24,9 @@ through short, focused practice sessions. Exact mechanics are still being define
 
 ## Install & Run
 
-Not available yet — the app has not been scaffolded. Check back after the initial React setup lands.
+```bash
+npm install
+npm run dev
+```
+
+Open the URL shown in the terminal (usually `http://localhost:5173`) to try the language level quiz.
